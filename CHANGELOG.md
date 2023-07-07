@@ -6,9 +6,10 @@ x.y.z Release notes (yyyy-MM-dd)
   incorrectly set.
 
 ### Enhancements
-* Add support for the Decimal128 data type (`realm::decimal128`).
-* Add ability to set custom http headers. The http headers should be passed when constructing a `realm::App` and when in 
-  possession of a config derived from `realm::user::flexible_sync_configuration()` by calling `foo_config.set_custom_http_headers(...);`.
+* Add support for the Decimal128 data type (`realm::decimal128`) ([PR #80](https://github.com/realm/realm-cpp/pull/80)).
+* Add ability to set custom http headers. The http headers should be passed when constructing 
+  a `realm::App` and when in possession of a config derived from `realm::user::flexible_sync_configuration()` 
+  by calling `foo_config.set_custom_http_headers(...);` ([PR #81](https://github.com/realm/realm-cpp/pull/81)).
 
 ### Breaking Changes
 * None
