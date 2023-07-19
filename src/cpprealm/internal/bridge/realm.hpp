@@ -67,6 +67,7 @@ namespace realm::internal::bridge {
             void set_schema(const std::vector<object_schema>&);
             void set_scheduler(const std::shared_ptr<struct scheduler>&);
             void set_sync_config(const std::optional<struct sync_config>&);
+            void set_schema_version(uint64_t version);
         private:
 #ifdef __i386__
             std::aligned_storage<192, 8>::type m_config[1];
