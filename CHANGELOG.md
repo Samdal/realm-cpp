@@ -4,9 +4,16 @@ x.y.z Release notes (yyyy-MM-dd)
 ### Fixed
 * Windows would not compile under Release build configuration as `aligned_storage` parameters were
   incorrectly set.
+* Fix iterator on `experimental::Results`
+* Fix issue where properties on a link column could not be queried.
 
 ### Enhancements
 * Add support for the Decimal128 data type (`realm::decimal128`).
+* Add `operator!=()` to collections.
+* Add `set_schema_version(uint64_t)`
+* Add `managed<std::vector<T*>>::push_back(const managed<T*>&)`
+* Add `box<managed<V*>>::box& operator=(const managed<V*>& o)`
+* Add `box<managed<V*>>::box& operator=(const managed<V>& o)`
 
 ### Breaking Changes
 * None
